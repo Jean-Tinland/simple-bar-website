@@ -1,0 +1,29 @@
+@mixin title(
+  $color: #fff,
+  $mobile-font-size: 25px,
+  $desktop-font-size: 34px,
+  $uppercase: false,
+  $bold: false,
+  $line-height: 1.25
+) {
+  color: $color;
+  font-size: $mobile-font-size;
+  line-height: $line-height;
+  @if ($uppercase) {
+    text-transform: uppercase;
+  }
+  @if ($bold) {
+    font-weight: 700;
+  }
+  @media (min-width: 992px) {
+    font-size: $desktop-font-size;
+  }
+}
+@mixin text($color: #fff, $mobile-font-size: 13px, $desktop-font-size: 16px, $line-height: 1.5) {
+  color: $color;
+  font-size: $mobile-font-size;
+  line-height: $line-height;
+  @media (min-width: 992px) {
+    font-size: $desktop-font-size;
+  }
+}

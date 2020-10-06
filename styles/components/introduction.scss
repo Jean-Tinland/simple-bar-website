@@ -1,0 +1,19 @@
+.introduction {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.introduction__title {
+  margin-bottom: 10px;
+  @include title;
+  font-family: $mono-font;
+}
+.introduction__tagline {
+  @include text;
+}
+.introduction__tagline > b {
+  color: $yellow;
+}

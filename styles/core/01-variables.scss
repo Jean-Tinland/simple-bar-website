@@ -1,0 +1,31 @@
+$lightest-grey: #f5f5f5;
+$lighter-grey: #dfdfdf;
+$light-grey: #cacaca;
+$grey: #afafaf;
+$dark-grey: #484848;
+
+$primary: #1e2737;
+$primary-light: #39465e;
+$primary-dark: #1b222d;
+
+$majenta: #ad82cb;
+$blue: #6db3ce;
+$red: #e78482;
+$yellow: #ffd484;
+$cyan: #7eddde;
+$green: #8fc8bb;
+
+$base-font: Inter, sans-serif;
+$mono-font: 'JetBrains Mono', monospace;
+
+$content-width: 1400px;
+
+$blur: 5px;
+$radius: 10px;
+$focus-ring: 0 0 0 3px rgba($yellow, 0.75);
+$shadow-smallest: 0px 4px 8px rgba(0, 0, 0, 0.12);
+$shadow-small: 0 5px 10px rgba(0, 0, 0, 0.12);
+$shadow-medium: 0 8px 30px rgba(0, 0, 0, 0.12);
+$shadow-large: 0 30px 60px rgba(0, 0, 0, 0.12);
+
+$transition-easing: cubic-bezier(0.4, 0, 0.2, 1);

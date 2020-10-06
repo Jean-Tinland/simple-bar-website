@@ -1,0 +1,19 @@
+.lang-switch {
+  position: fixed;
+  top: 25px;
+  right: 25px;
+  padding: 5px;
+  color: #fff;
+  font-size: 13px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 3px;
+  transition: background-color 160ms $transition-easing, box-shadow 160ms $transition-easing;
+}
+.lang-switch:hover {
+  background-color: rgba(#fff, 0.1);
+}
+.lang-switch:focus {
+  outline: none;
+  box-shadow: $focus-ring;
+}
