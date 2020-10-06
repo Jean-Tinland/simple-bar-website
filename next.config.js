@@ -1,4 +1,5 @@
 module.exports = {
+  trailingSlash: true,
   exportPathMap() {
     return {
       '/en': { page: '/', query: { lang: 'en' } },
