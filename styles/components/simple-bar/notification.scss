@@ -1,0 +1,33 @@
+.notification {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 20px;
+  color: #fff;
+  line-height: 1;
+  background-color: $primary;
+  border-radius: $radius;
+  transition: opacity 160ms $transition-easing, transform 160ms $transition-easing;
+  animation: notification-appearance 160ms $transition-easing;
+  z-index: 1;
+}
+@keyframes notification-appearance {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+}
+.notification--closing {
+  opacity: 0;
+  transform: translateX(50px);
+}
+.notification__title {
+  margin-bottom: 4px;
+  font-size: 17px;
+}
+.notification__label {
+  font-size: 14px;
+}

@@ -27,3 +27,13 @@
     font-size: $desktop-font-size;
   }
 }
+
+@mixin background-filter($color, $alpha, $fallback-alpha) {
+  @if ($blur != 0) {
+    background-color: rgba($color, $fallback-alpha);
+    @supports (backdrop-filter: blur(12px)) {
+      background-color: rgba($color, $alpha);
+      backdrop-filter: blur($blur);
+    }
+  }
+}

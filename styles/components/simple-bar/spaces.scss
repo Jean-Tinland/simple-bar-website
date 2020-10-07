@@ -1,0 +1,54 @@
+.spaces {
+  display: flex;
+  align-items: center;
+  padding: 0 5px;
+}
+.space {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+  padding: 3px 6px;
+  font-size: 11px;
+  font-family: $mono-font;
+  background-color: $primary-light;
+  border-radius: 2px;
+  box-shadow: $shadow-small;
+  cursor: pointer;
+  user-select: none;
+  transform: translateZ(0);
+  transition: color 320ms $transition-easing, background-color 320ms $transition-easing,
+    transform 320ms $transition-easing;
+  z-index: 0;
+  transform-origin: left;
+  animation: space-appearance 320ms $transition-easing;
+}
+@keyframes space-appearance {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+.space--current {
+  color: $primary;
+  background-color: #fff;
+}
+.space:active {
+  transform: scale(0.9);
+}
+.space > svg {
+  flex: 0 0 11px;
+  width: 11px;
+  height: 11px;
+  margin-left: 6px;
+  fill: currentColor;
+  opacity: 0.5;
+  transform: translateZ(0);
+}
+.space--current > svg:nth-child(1) {
+  opacity: 1;
+}

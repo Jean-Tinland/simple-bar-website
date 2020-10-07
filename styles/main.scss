@@ -3,5 +3,11 @@
 @import './core/02-mixins';
 @import './core/03-base';
 
+@import './components/simple-bar/data';
+@import './components/simple-bar/index';
+@import './components/simple-bar/notification';
+@import './components/simple-bar/spaces';
+@import './components/simple-bar/windows';
+
 @import './components/introduction';
 @import './components/lang-switch';

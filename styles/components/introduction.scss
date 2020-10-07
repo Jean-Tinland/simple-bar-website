@@ -10,9 +10,32 @@
   margin-bottom: 10px;
   @include title;
   font-family: $mono-font;
+  animation: introduction-title-appearance 320ms $transition-easing;
+}
+@keyframes introduction-title-appearance {
+  0% {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
 }
 .introduction__tagline {
   @include text;
+  animation: introduction-tagline-appearance 480ms $transition-easing;
+}
+@keyframes introduction-tagline-appearance {
+  0%,
+  33% {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
 }
 .introduction__tagline > b {
   color: $yellow;

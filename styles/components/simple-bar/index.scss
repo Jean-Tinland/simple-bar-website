@@ -1,0 +1,60 @@
+.simple-bar {
+  display: none;
+  @media (min-width: 1230px) {
+    width: 1200px;
+    max-width: calc(100% - 20px);
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto 0 auto;
+    overflow: hidden;
+    border-radius: 3px;
+    transform-origin: top;
+    animation: simple-bar-appearance 640ms $transition-easing;
+  }
+}
+@keyframes simple-bar-appearance {
+  0%,
+  50% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+}
+.simple-bar__inner {
+  position: relative;
+  width: 100%;
+  height: 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $primary-dark;
+  box-shadow: $shadow-small;
+  z-index: 1;
+}
+.simple-bar__process {
+  position: absolute;
+  top: 6px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 11px;
+  text-align: center;
+  font-family: $mono-font;
+  pointer-events: none;
+  touch-action: none;
+}
+.simple-bar__bg {
+  position: relative;
+  z-index: 0;
+}
+.simple-bar__bg > img {
+  width: 100%;
+}
+.simple-bar__bg::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent, $primary);
+}

@@ -1,4 +1,5 @@
 import * as React from 'react'
+import SimpleBar from './simple-bar/'
 import message from './messages'
 
 const Introduction = ({ lang }) => {
@@ -9,6 +10,7 @@ const Introduction = ({ lang }) => {
         className="introduction__tagline"
         dangerouslySetInnerHTML={{ __html: message(lang, 'introduction-tagline') }}
       />
+      <SimpleBar lang={lang} />
     </div>
   )
 }
