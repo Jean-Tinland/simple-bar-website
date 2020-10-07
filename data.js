@@ -5,7 +5,7 @@ export const locales = {
     'home-title': 'simple-bar - A yabai status bar widget for Übersicht',
 
     'introduction-title': 'simple-bar',
-    'introduction-tagline': 'A <b>yabai</b> status bar widget for <b>Übersicht</b>',
+    'introduction-tagline': 'An <b>Übersicht</b> status bar widget for <b>yabai</b>',
 
     'wifi-active': 'Awesome wifi',
     'wifi-inactive': 'Disabled',
@@ -18,7 +18,7 @@ export const locales = {
     'home-title': 'simple-bar - Un widget pour yabai & Übersicht',
 
     'introduction-title': 'simple-bar',
-    'introduction-tagline': 'Un widget pour <b>yabai</b> & <b>Übersicht</b>',
+    'introduction-tagline': 'Un widget <b>Übersicht</b> pour <b>yabai</b>',
 
     'wifi-active': 'Votre wifi',
     'wifi-inactive': 'Désactivé',
