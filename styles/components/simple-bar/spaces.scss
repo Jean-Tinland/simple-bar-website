@@ -20,18 +20,6 @@
   transition: color 320ms $transition-easing, background-color 320ms $transition-easing,
     transform 320ms $transition-easing;
   z-index: 0;
-  transform-origin: left;
-  animation: space-appearance 320ms $transition-easing;
-}
-@keyframes space-appearance {
-  0% {
-    opacity: 0;
-    transform: scale(0);
-  }
-  100% {
-    opacity: 1;
-    transform: none;
-  }
 }
 .space--current {
   color: $primary;
