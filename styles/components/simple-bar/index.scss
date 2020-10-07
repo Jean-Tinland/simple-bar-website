@@ -9,12 +9,12 @@
     overflow: hidden;
     border-radius: 3px;
     transform-origin: top;
-    animation: simple-bar-appearance 640ms $transition-easing;
+    animation: simple-bar-appearance 800ms $transition-easing;
   }
 }
 @keyframes simple-bar-appearance {
   0%,
-  50% {
+  66% {
     opacity: 0;
     transform: translateX(-50px);
   }

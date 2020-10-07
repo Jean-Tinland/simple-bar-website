@@ -43,6 +43,18 @@
 .introduction__data {
   display: flex;
   margin-top: 20px;
+  animation: introduction-data-appearance 640ms $transition-easing;
+}
+@keyframes introduction-data-appearance {
+  0%,
+  50% {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
 }
 .introduction__data-item {
   display: flex;
