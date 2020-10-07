@@ -40,3 +40,43 @@
 .introduction__tagline > b {
   color: $yellow;
 }
+.introduction__data {
+  display: flex;
+  margin-top: 20px;
+}
+.introduction__data-item {
+  display: flex;
+  align-items: stretch;
+  margin: 0 10px;
+  color: #fff;
+  text-decoration: none;
+}
+.introduction__data-item-left,
+.introduction__data-item-right {
+  flex: 0 0 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+  background-color: $primary-light;
+  transition: color 160ms $transition-easing, background-color 160ms $transition-easing;
+}
+.introduction__data-item:hover .introduction__data-item-left,
+.introduction__data-item:hover .introduction__data-item-right {
+  color: $primary;
+  background-color: $yellow;
+}
+.introduction__data-item-left {
+  border-radius: 3px 0 0 3px;
+}
+.introduction__data-item-left > svg {
+  width: 12px;
+  height: 12px;
+  fill: currentColor;
+}
+.introduction__data-item-right {
+  font-size: 12px;
+  font-family: $mono-font;
+  border-radius: 0 3px 3px 0;
+  border-left: 1px solid $primary;
+}
