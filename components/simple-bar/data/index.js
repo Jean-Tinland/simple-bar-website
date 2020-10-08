@@ -9,7 +9,7 @@ import Time from './time'
 const Data = ({ lang, setNotification }) => {
   return (
     <div className="data">
-      <Battery />
+      <Battery lang={lang} />
       <Mic lang={lang} setNotification={setNotification} />
       <Sound />
       <Wifi lang={lang} setNotification={setNotification} />

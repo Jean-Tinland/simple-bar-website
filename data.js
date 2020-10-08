@@ -5,27 +5,41 @@ export const locales = {
     'home-title': 'simple-bar - A yabai status bar widget for Übersicht',
 
     'introduction-title': 'simple-bar',
-    'introduction-tagline': 'An <b>Übersicht</b> status bar widget for <b>yabai</b>',
+    'introduction-tagline': 'An <span>Übersicht</span> status bar widget for <span>yabai</span>',
 
     'wifi-active': 'Awesome wifi',
     'wifi-inactive': 'Disabled',
     'wifi-enabling': 'Enabling wifi...',
     'wifi-disabling': 'Disabling wifi...',
     'mic-enabling': 'Enabling microphone...',
-    'mic-disabling': 'Disabling microphone...'
+    'mic-disabling': 'Disabling microphone...',
+
+    'battery-more-info-not-charging': 'Not charging',
+    'battery-more-info-low': 'Low battery',
+
+    'menu-features': 'Features',
+    'menu-compatibility': 'Compatibility & requirements',
+    'menu-installation': 'Installation'
   },
   fr: {
     'home-title': 'simple-bar - Un widget pour yabai & Übersicht',
 
     'introduction-title': 'simple-bar',
-    'introduction-tagline': 'Un widget <b>Übersicht</b> pour <b>yabai</b>',
+    'introduction-tagline': 'Un widget <span>Übersicht</span> pour <span>yabai</span>',
 
     'wifi-active': 'Votre wifi',
     'wifi-inactive': 'Désactivé',
     'wifi-enabling': 'Activation du wifi...',
     'wifi-disabling': 'Désactivation du wifi...',
     'mic-enabling': 'Activation du microphone...',
-    'mic-disabling': 'Désactivation du microphone...'
+    'mic-disabling': 'Désactivation du microphone...',
+
+    'battery-more-info-not-charging': 'Non branchée',
+    'battery-more-info-low': 'Batterie faible',
+
+    'menu-features': 'Fonctionnalités',
+    'menu-compatibility': 'Compatibilité & pré-requis',
+    'menu-installation': 'Installation'
   }
 }
 
@@ -61,3 +75,18 @@ export const appIcons = {
   Skype: SkypeIcon,
   Slack: SlackIcon
 }
+
+export const introductionMenuItems = (lang) => [
+  {
+    code: 'features',
+    name: locales[lang]['menu-features']
+  },
+  {
+    code: 'compatibility',
+    name: locales[lang]['menu-compatibility']
+  },
+  {
+    code: 'installation',
+    name: locales[lang]['menu-installation']
+  }
+]

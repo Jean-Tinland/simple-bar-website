@@ -6,12 +6,15 @@ import { EyeIcon, StarIcon, ForkIcon } from './icons'
 
 import { getRepo } from '../services/github'
 
+import { introductionMenuItems } from '../data'
+
 const Introduction = ({ lang }) => {
   const [data, setData] = useState({
     watchers: 0,
     stars: 0,
     forks: 0
   })
+
   useEffect(() => {
     const getData = async () => {
       const res = await getRepo()
@@ -67,6 +70,22 @@ const Introduction = ({ lang }) => {
         </a>
       </div>
       <SimpleBar lang={lang} />
+      <nav className="introduction__menu" role="menu">
+        {introductionMenuItems(lang).map((item) => {
+          const { code, name } = item
+          const anchor = `#${code}`
+          const onClick = (e) => {
+            e.preventDefault()
+            const target = document.querySelector(anchor)
+            target && target.scrollIntoView({ behavior: 'smooth' })
+          }
+          return (
+            <a className="introduction__menu-item" href={anchor} role="menuitem" onClick={onClick}>
+              {name}
+            </a>
+          )
+        })}
+      </nav>
     </div>
   )
 }
