@@ -2,7 +2,7 @@ import { GoogleChromeIcon, SkypeIcon, SlackIcon, CodeIcon } from './components/i
 
 export const locales = {
   en: {
-    'home-title': 'simple-bar - A yabai status bar widget for Übersicht',
+    'home-title': 'simple-bar - An Übersicht status bar widget for yabai',
 
     'introduction-title': 'simple-bar',
     'introduction-tagline': 'An <span>Übersicht</span> status bar widget for <span>yabai</span>',
@@ -19,10 +19,12 @@ export const locales = {
 
     'menu-features': 'Features',
     'menu-compatibility': 'Compatibility & requirements',
-    'menu-installation': 'Installation'
+    'menu-installation': 'Installation',
+
+    'features-subtitle': 'simple-bar is splitted in 4 main widgets'
   },
   fr: {
-    'home-title': 'simple-bar - Un widget pour yabai & Übersicht',
+    'home-title': 'simple-bar - Un widget Übersicht pour yabai',
 
     'introduction-title': 'simple-bar',
     'introduction-tagline': 'Un widget <span>Übersicht</span> pour <span>yabai</span>',
@@ -39,7 +41,9 @@ export const locales = {
 
     'menu-features': 'Fonctionnalités',
     'menu-compatibility': 'Compatibilité & pré-requis',
-    'menu-installation': 'Installation'
+    'menu-installation': 'Installation',
+
+    'features-subtitle': 'simple-bar est composé de 4 widgets principaux'
   }
 }
 
