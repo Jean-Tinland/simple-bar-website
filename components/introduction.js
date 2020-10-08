@@ -80,7 +80,7 @@ const Introduction = ({ lang }) => {
             target && target.scrollIntoView({ behavior: 'smooth' })
           }
           return (
-            <a className="introduction__menu-item" href={anchor} role="menuitem" onClick={onClick}>
+            <a key={code} className="introduction__menu-item" href={anchor} role="menuitem" onClick={onClick}>
               {name}
             </a>
           )

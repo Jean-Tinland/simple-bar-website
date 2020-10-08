@@ -98,23 +98,33 @@
 }
 .introduction__menu {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-top: 30px;
+  @media (min-width: 700px) {
+    flex-direction: row;
+  }
 }
 .introduction__menu-item {
   display: flex;
   align-items: center;
-  margin-left: 10px;
+  margin-bottom: 10px;
   color: #fff;
   text-decoration: none;
   font-weight: 700;
   transition: color 160ms $transition-easing;
+  @media (min-width: 700px) {
+    margin: 0 0 0 10px;
+  }
 }
 .introduction__menu-item:hover {
   color: $yellow;
 }
 .introduction__menu-item:not(:first-of-type)::before {
-  content: '•';
-  margin-right: 10px;
+  @media (min-width: 700px) {
+    content: '•';
+    margin-right: 10px;
+  }
 }
 .introduction__menu-item:hover::before {
   color: #fff;

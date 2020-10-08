@@ -15,9 +15,9 @@ const Home = ({ lang }) => {
       </Head>
       <LangSwitch lang={lang} />
       <Introduction lang={lang} />
-      <Section id="features" dark>
+      {/* <Section id="features" dark>
         <Features lang={lang} />
-      </Section>
+      </Section> */}
     </div>
   )
 }
