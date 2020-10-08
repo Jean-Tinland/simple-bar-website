@@ -16,6 +16,11 @@ export const locales = {
 
     'battery-more-info-not-charging': 'Not charging',
     'battery-more-info-low': 'Low battery',
+    'sound-more-info-low': 'Volume low',
+    'sound-more-info-no-volume': 'No volume',
+    'sound-more-info-muted': 'Muted',
+    'date-more-info-long': 'Long date format',
+    'time-more-info-12h': '12h time format',
 
     'menu-features': 'Features',
     'menu-compatibility': 'Compatibility & requirements',
@@ -38,6 +43,11 @@ export const locales = {
 
     'battery-more-info-not-charging': 'Non branchée',
     'battery-more-info-low': 'Batterie faible',
+    'sound-more-info-low': 'Volume bas',
+    'sound-more-info-no-volume': 'Pas de volume',
+    'sound-more-info-muted': 'Muet',
+    'date-more-info-long': 'Date en format long',
+    'time-more-info-12h': 'Heure au format AM/PM',
 
     'menu-features': 'Fonctionnalités',
     'menu-compatibility': 'Compatibilité & pré-requis',

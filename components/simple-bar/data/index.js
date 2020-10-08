@@ -11,10 +11,10 @@ const Data = ({ lang, setNotification }) => {
     <div className="data">
       <Battery lang={lang} />
       <Mic lang={lang} setNotification={setNotification} />
-      <Sound />
+      <Sound lang={lang} />
       <Wifi lang={lang} setNotification={setNotification} />
-      <DateDisplay />
-      <Time />
+      <DateDisplay lang={lang} />
+      <Time lang={lang} />
     </div>
   )
 }

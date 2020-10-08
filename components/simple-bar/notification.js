@@ -9,8 +9,8 @@ const notification = ({ notification, setNotification }) => {
 
   useEffect(() => {
     clearTimeout(delay)
-    setDelay(setTimeout(() => setNotification(undefined), 4000))
-    setAnimationDelay(setTimeout(() => setClosing(true), 4000 - 160))
+    setDelay(setTimeout(() => setNotification(undefined), 3000))
+    setAnimationDelay(setTimeout(() => setClosing(true), 3000 - 160))
     return () => {
       clearTimeout(animationDelay)
       clearTimeout(delay)

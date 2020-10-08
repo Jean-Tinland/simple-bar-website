@@ -27,9 +27,27 @@
   transition: opacity 160ms $transition-easing, transform 160ms $transition-easing;
   z-index: -1;
 }
-.battery:hover .data__more-info {
+.time .data__more-info {
+  left: unset;
+  right: 0;
+  transform-origin: top right;
+  transform: translate(0, -20%);
+}
+.battery:hover .data__more-info,
+.battery.auto-hover .data__more-info,
+.sound:hover .data__more-info,
+.sound.auto-hover .data__more-info,
+.date-display:hover .data__more-info,
+.date-display.auto-hover .data__more-info,
+.time:hover .data__more-info,
+.time.auto-hover .data__more-info {
   opacity: 1;
   transform: translateX(-50%);
+}
+.time:hover .data__more-info,
+.time.auto-hover .data__more-info {
+  left: unset;
+  transform: none;
 }
 .data__more-info::before {
   content: '';
@@ -39,6 +57,10 @@
   width: 2px;
   height: 40px;
   background-color: $primary;
+}
+.time .data__more-info::before {
+  left: unset;
+  right: 20px;
 }
 .data__more-info-item {
   flex: 1 1 auto;
@@ -156,6 +178,7 @@
 }
 
 .sound {
+  position: relative;
   display: flex;
   align-items: center;
   padding: 3px 7px;
@@ -197,6 +220,7 @@
 }
 
 .date-display {
+  position: relative;
   display: flex;
   align-items: center;
   padding: 3px 7px;
