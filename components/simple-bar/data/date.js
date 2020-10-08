@@ -3,20 +3,28 @@ import { useState, useEffect } from 'react'
 import { DateIcon } from '../../icons'
 
 const DateDisplay = () => {
-  const [now, setNow] = useState(new Date())
+  const [date, setDate] = useState()
 
-  useEffect(() => setNow(new Date()), [])
+  useEffect(() => {
+    const now = new Date()
 
-  const options = {
-    weekday: 'short',
-    month: 'short',
-    day: 'numeric'
-  }
-  const date = now.toLocaleDateString('en-UK', options)
+    const options = {
+      weekday: 'short',
+      month: 'short',
+      day: 'numeric'
+    }
+
+    setDate(now.toLocaleDateString('en-UK', options))
+  }, [])
+
   return (
     <div className="date-display">
-      <DateIcon className="date-display__icon" />
-      {date}
+      {date && (
+        <>
+          <DateIcon className="date-display__icon" />
+          {date}
+        </>
+      )}
     </div>
   )
 }
