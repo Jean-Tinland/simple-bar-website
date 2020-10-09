@@ -2,21 +2,22 @@ import * as React from 'react'
 import { useState, useEffect } from 'react'
 import classnames from 'classnames'
 
-const notification = ({ notification, setNotification }) => {
+const Notification = ({ notification, setNotification }) => {
   const [closing, setClosing] = useState(false)
-  const [delay, setDelay] = useState()
-  const [animationDelay, setAnimationDelay] = useState()
 
   useEffect(() => {
-    clearTimeout(delay)
-    setDelay(setTimeout(() => setNotification(undefined), 3000))
-    setAnimationDelay(setTimeout(() => setClosing(true), 3000 - 160))
-    return () => {
-      clearTimeout(animationDelay)
-      clearTimeout(delay)
-      setClosing(false)
+    if (notification) {
+      const animationDelay = setTimeout(() => setClosing(true), 3000 - 160)
+      const delay = setTimeout(() => {
+        setClosing(false)
+        setNotification(undefined)
+      }, 3000)
+      return () => {
+        clearTimeout(delay)
+        clearTimeout(animationDelay)
+      }
     }
-  }, [notification])
+  }, [notification, setNotification])
 
   const classes = classnames('notification', {
     'notification--closing': closing
@@ -34,4 +35,4 @@ const notification = ({ notification, setNotification }) => {
   )
 }
 
-export default notification
+export default Notification

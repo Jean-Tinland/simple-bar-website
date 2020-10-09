@@ -30,7 +30,6 @@ const Time = ({ lang }) => {
     dayStart.setHours(0, 0, 0)
     dayEnd.setHours(0, 0, 0)
     dayEnd.setDate(dayEnd.getDate() + 1)
-    console.log({ dayEnd, dayStart })
     const range = dayEnd - dayStart
     const diff = Math.max(0, dayEnd - new Date(now))
     setFillerWidth((100 - (100 * diff) / range) / 100)

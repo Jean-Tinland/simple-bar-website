@@ -1,8 +1,9 @@
+import * as React from 'react'
 import Head from 'next/head'
 import LangSwitch from '../components/lang-switch'
 import Introduction from '../components/introduction'
-import Section from '../components/section'
-import Features from '../components/features'
+// import Section from '../components/section'
+// import Features from '../components/features'
 import message from '../components/messages'
 
 const Home = ({ lang }) => {

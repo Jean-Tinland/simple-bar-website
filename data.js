@@ -22,6 +22,8 @@ export const locales = {
     'date-more-info-long': 'Long date format',
     'time-more-info-12h': '12h time format',
 
+    'simple-bar-demo-tooltip': 'Start/stop demo',
+
     'menu-features': 'Features',
     'menu-compatibility': 'Compatibility & requirements',
     'menu-installation': 'Installation',
@@ -48,6 +50,8 @@ export const locales = {
     'sound-more-info-muted': 'Muet',
     'date-more-info-long': 'Date en format long',
     'time-more-info-12h': 'Heure au format AM/PM',
+
+    'simple-bar-demo-tooltip': 'Démarrer/arrêter la demo',
 
     'menu-features': 'Fonctionnalités',
     'menu-compatibility': 'Compatibilité & pré-requis',
