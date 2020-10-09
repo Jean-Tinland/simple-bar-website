@@ -12,6 +12,7 @@
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
+  text-align: center;
 }
 .features__title {
   margin-bottom: 15px;
@@ -29,7 +30,7 @@
 }
 .features__inner {
   width: 100%;
-  max-width: 1000px;
+  max-width: 1100px;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -37,11 +38,19 @@
 }
 .feature {
   position: relative;
+  width: 100%;
+  max-width: 1000px;
   display: flex;
+  align-items: center;
+  margin-right: auto;
   padding: 15px;
   background-color: rgba($primary-light, 0.4);
   border-radius: $radius;
   overflow: hidden;
+}
+.feature:nth-of-type(even) {
+  margin-left: auto;
+  margin-right: 0;
 }
 .feature::before {
   content: attr(data-id);
@@ -79,6 +88,12 @@
 .feature__description {
   @include text;
 }
+.feature__description span {
+  display: block;
+  padding: 10px 15px;
+  background-color: $primary;
+  border-radius: 5px;
+}
 .feature__right > img {
-  border-radius: 2px;
+  border-radius: 5px;
 }
