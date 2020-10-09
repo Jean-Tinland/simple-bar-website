@@ -17,7 +17,7 @@
   padding: 10px 0;
   display: flex;
   background-color: $primary;
-  border-radius: $radius;
+  border-radius: $radius / 2;
   opacity: 0;
   transform-origin: top left;
   transform: translate(-50%, -20%);
@@ -41,7 +41,7 @@
 .date-display.auto-hover .data__more-info,
 .time:hover .data__more-info,
 .time.auto-hover .data__more-info {
-  opacity: 1;
+  opacity: 0.8;
   transform: translateX(-50%);
 }
 .time:hover .data__more-info,
