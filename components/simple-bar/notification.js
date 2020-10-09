@@ -7,11 +7,11 @@ const Notification = ({ notification, setNotification }) => {
 
   useEffect(() => {
     if (notification) {
-      const animationDelay = setTimeout(() => setClosing(true), 3000 - 160)
+      const animationDelay = setTimeout(() => setClosing(true), 2000 - 160)
       const delay = setTimeout(() => {
         setClosing(false)
         setNotification(undefined)
-      }, 3000)
+      }, 2000)
       return () => {
         clearTimeout(delay)
         clearTimeout(animationDelay)
