@@ -28,7 +28,11 @@ export const locales = {
     'menu-compatibility': 'Compatibility & requirements',
     'menu-installation': 'Installation',
 
-    'features-subtitle': 'simple-bar is splitted in 4 main widgets'
+    'features-subtitle': '<span>simple-bar</span> is splitted in <b>4</b> main widgets',
+
+    'feature-1-title': 'Current process name',
+    'feature-1-description':
+      'Always keep track of  the <b>focused window</b> and its application <b>name</b> and <b>title</b>.'
   },
   fr: {
     'home-title': 'simple-bar - Un widget Übersicht pour yabai',
@@ -57,7 +61,11 @@ export const locales = {
     'menu-compatibility': 'Compatibilité & pré-requis',
     'menu-installation': 'Installation',
 
-    'features-subtitle': 'simple-bar est composé de 4 widgets principaux'
+    'features-subtitle': '<span>simple-bar</span> est composé de <b>4</b> widgets principaux',
+
+    'feature-1-title': 'Nom du processus courant',
+    'feature-1-description':
+      'Gardez tout le temps à portée de vue la <b>fenêtre courante</b> ainsi que le <b>nom</b> et le <b>titre</b> de celle-ci.'
   }
 }
 
