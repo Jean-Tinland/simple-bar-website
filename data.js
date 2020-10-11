@@ -35,7 +35,7 @@ export const locales = {
       'Always keep track of  the <b>focused window</b> and its application <b>name</b> and <b>title</b>.',
     'feature-2-title': 'Spaces display',
     'feature-2-description':
-      'This widget goal is to display <b>each one of your spaces</b> and for each of them show you <b>all opened apps</b>. The currently focused space is highlited.<br/><br/>You can directy <b>go to a specific space</b> simply <b>by clicking on it</b>, no need to repeat five time the same gesture anymore!<br/><br/><span><i>Only with SIP disable:</i><br/><b>Create</b>, <b>move</b> and <b>destroy</b> worspaces!</span>',
+      'This widget goal is to display <b>each one of your spaces</b> and for each of them show you <b>all opened apps</b>. The currently focused space is highlited.<br/><br/>You can directy <b>go to a specific space</b> simply <b>by clicking on it</b>, no need to repeat five time the same gesture anymore!<br/><br/><span><i>Only with SIP disabled:</i><br/><b>Create</b>, <b>move</b> and <b>destroy</b> worspaces!</span>',
     'feature-3-title': 'Global information',
     'feature-3-description':
       'Stay updated with a selection of data widgets: <b>current browser song</b>, <b>Spotify current track</b> (with play/pause state), <b>battery level</b>, <b>microphone & sound</b>, <b>wifi</b>, <b>date & time</b>.</br></br><b>Some of them are interactive</b>: play/pause Spotify, mute/unmute microphone, toggle wifi on click.',

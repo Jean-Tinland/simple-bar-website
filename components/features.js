@@ -24,16 +24,18 @@ const Features = ({ lang }) => {
         {features.map((feature) => {
           const { id, image } = feature
           return (
-            <div className="feature" data-id={id}>
-              <div className="feature__left">
-                <div className="feature__title">{message(lang, `feature-${id}-title`)}</div>
-                <div
-                  className="feature__description"
-                  dangerouslySetInnerHTML={{ __html: message(lang, `feature-${id}-description`) }}
-                />
-              </div>
-              <div className="feature__right">
-                <img src={image} alt="" />
+            <div key={id} className="feature">
+              <div className="feature__inner" data-id={id}>
+                <div className="feature__left">
+                  <div className="feature__title">{message(lang, `feature-${id}-title`)}</div>
+                  <div
+                    className="feature__description"
+                    dangerouslySetInnerHTML={{ __html: message(lang, `feature-${id}-description`) }}
+                  />
+                </div>
+                <div className="feature__right">
+                  <img src={image} alt="" />
+                </div>
               </div>
             </div>
           )

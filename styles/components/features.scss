@@ -3,7 +3,7 @@
   @media (min-width: 1100px) {
     padding: 100px 15px;
   }
-  @media (min-width: 1000px + 30px) {
+  @media (min-width: 1200px + 30px) {
     padding: 100px 0;
   }
 }
@@ -39,35 +39,53 @@
 .feature {
   position: relative;
   width: 100%;
-  max-width: 1000px;
+  max-width: 400px;
+  margin: 0 auto;
+  @media (min-width: 750px) {
+    max-width: 1000px;
+    margin: 0;
+  }
+}
+.feature:nth-of-type(even) {
+  @media (min-width: 750px) {
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
+.feature__inner {
+  position: relative;
   display: flex;
+  flex-direction: column;
   align-items: center;
   margin-right: auto;
-  padding: 15px;
-  background-color: rgba($primary-light, 0.4);
+  background-color: rgba($primary-light, 0.3);
   border-radius: $radius;
-  overflow: hidden;
+  box-shadow: $shadow-large;
   opacity: 0;
   transform: translateY(100px);
   transition: opacity 160ms $transition-easing, transform 160ms $transition-easing;
+  @media (min-width: 750px) {
+    flex-direction: row;
+    padding: 15px;
+    overflow: hidden;
+    box-shadow: none;
+  }
 }
-.feature:nth-of-type(even) {
-  margin-left: auto;
-  margin-right: 0;
-}
-.feature--in-view {
+.feature--in-view .feature__inner {
   opacity: 1;
   transform: none;
 }
-.feature::before {
-  content: attr(data-id);
-  position: absolute;
-  top: -14px;
-  left: -4px;
-  @include title(rgba(#fff, 0.1), 30px, 60px, false, true);
-  font-family: $mono-font;
+.feature__inner::before {
+  @media (min-width: 750px) {
+    content: attr(data-id);
+    position: absolute;
+    top: -14px;
+    left: -4px;
+    @include title(rgba(#fff, 0.1), 30px, 60px, false, true);
+    font-family: $mono-font;
+  }
 }
-.feature:nth-of-type(even)::before {
+.feature:nth-of-type(even) .feature__inner::before {
   left: unset;
   right: -4px;
 }
@@ -84,6 +102,12 @@
   align-items: flex-start;
   justify-content: center;
   padding: 20px;
+}
+.feature__left {
+  order: 1;
+  @media (min-width: 750px) {
+    order: 0;
+  }
 }
 .feature:nth-of-type(even) .feature__left {
   order: 1;
@@ -102,5 +126,8 @@
   border-radius: 5px;
 }
 .feature__right > img {
-  border-radius: 5px;
+  border-radius: $radius $radius 0 0;
+  @media (min-width: 750px) {
+    border-radius: 5px;
+  }
 }
