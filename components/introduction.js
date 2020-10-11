@@ -1,14 +1,17 @@
 import * as React from 'react'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import SimpleBar from './simple-bar/'
 import message from './messages'
 import { EyeIcon, StarIcon, ForkIcon } from './icons'
 
 import { getRepo } from '../services/github'
 
+import useInView from '../hooks/use-in-view'
+
 import { introductionMenuItems } from '../data'
 
 const Introduction = ({ lang }) => {
+  const ref = useRef()
   const [data, setData] = useState({
     watchers: 0,
     stars: 0,
@@ -27,8 +30,10 @@ const Introduction = ({ lang }) => {
     getData()
   }, [])
 
+  useInView(ref, undefined, true, 0.5, true)
+
   return (
-    <div className="introduction">
+    <div ref={ref} className="introduction">
       <div className="introduction__title">{message(lang, 'introduction-title')}</div>
       <div
         className="introduction__tagline"

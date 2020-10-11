@@ -1,5 +1,8 @@
 import * as React from 'react'
+import { useRef } from 'react'
 import message from './messages'
+
+import useInView from '../hooks/use-in-view'
 
 const features = [
   { id: 1, image: '/images/features/process.jpg' },
@@ -9,8 +12,12 @@ const features = [
 ]
 
 const Features = ({ lang }) => {
+  const ref = useRef()
+
+  useInView(ref, '.feature', true, 0.5, true)
+
   return (
-    <div className="features">
+    <div ref={ref} className="features">
       <div className="features__title">{message(lang, 'menu-features')}</div>
       <div className="features__subtitle" dangerouslySetInnerHTML={{ __html: message(lang, 'features-subtitle') }} />
       <div className="features__inner">

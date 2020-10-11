@@ -47,10 +47,17 @@
   background-color: rgba($primary-light, 0.4);
   border-radius: $radius;
   overflow: hidden;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 160ms $transition-easing, transform 160ms $transition-easing;
 }
 .feature:nth-of-type(even) {
   margin-left: auto;
   margin-right: 0;
+}
+.feature--in-view {
+  opacity: 1;
+  transform: none;
 }
 .feature::before {
   content: attr(data-id);

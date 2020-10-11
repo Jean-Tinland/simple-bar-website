@@ -10,32 +10,9 @@
   margin-bottom: 10px;
   @include title;
   font-family: $mono-font;
-  animation: introduction-title-appearance 320ms $transition-easing;
-}
-@keyframes introduction-title-appearance {
-  0% {
-    opacity: 0;
-    transform: translateX(-40px);
-  }
-  100% {
-    opacity: 1;
-    transform: none;
-  }
 }
 .introduction__tagline {
   @include text;
-  animation: introduction-tagline-appearance 480ms $transition-easing;
-}
-@keyframes introduction-tagline-appearance {
-  0%,
-  33% {
-    opacity: 0;
-    transform: translateX(-40px);
-  }
-  100% {
-    opacity: 1;
-    transform: none;
-  }
 }
 .introduction__tagline > span {
   padding: 3px 5px;
@@ -47,18 +24,6 @@
 .introduction__data {
   display: flex;
   margin-top: 20px;
-  animation: introduction-data-appearance 640ms $transition-easing;
-}
-@keyframes introduction-data-appearance {
-  0%,
-  50% {
-    opacity: 0;
-    transform: translateX(-40px);
-  }
-  100% {
-    opacity: 1;
-    transform: none;
-  }
 }
 .introduction__data-item {
   display: flex;
@@ -129,4 +94,27 @@
 }
 .introduction__menu-item:hover::before {
   color: #fff;
+}
+
+.introduction__title,
+.introduction__tagline,
+.introduction__data,
+.simple-bar,
+.introduction__menu {
+  opacity: 0;
+  transform: translateY(100px);
+}
+@for $i from 1 through 5 {
+  .introduction > *:nth-child(#{$i}) {
+    transition: opacity 160ms #{160 * ($i - 1)}ms $transition-easing,
+      transform 160ms #{160 * ($i - 1)}ms $transition-easing;
+  }
+}
+.introduction--in-view .introduction__title,
+.introduction--in-view .introduction__tagline,
+.introduction--in-view .introduction__data,
+.introduction--in-view .simple-bar,
+.introduction--in-view .introduction__menu {
+  opacity: 1;
+  transform: none;
 }
