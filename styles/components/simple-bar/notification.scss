@@ -5,10 +5,10 @@
   min-width: 280px;
   display: flex;
   flex-direction: column;
-  padding: 15px 20px;
+  padding: 12px 17px;
   color: #fff;
   line-height: 1;
-  background-color: $primary;
+  background-color: rgba($primary, 0.8);
   border-radius: $radius;
   transition: opacity 160ms $transition-easing, transform 160ms $transition-easing;
   animation: notification-appearance 160ms $transition-easing;
@@ -25,9 +25,10 @@
   transform: translateX(50px);
 }
 .notification__title {
-  margin-bottom: 4px;
-  font-size: 17px;
+  margin-bottom: 6px;
+  font-size: 15px;
+  font-weight: 700;
 }
 .notification__label {
-  font-size: 14px;
+  font-size: 12px;
 }
