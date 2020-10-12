@@ -18,7 +18,7 @@ const Home = ({ lang }) => {
       </Head>
       <Navigation lang={lang} />
       <Introduction lang={lang} />
-      <Section id="features" dark>
+      <Section id="features" light>
         <Features lang={lang} />
       </Section>
       <Section id="compatibility">

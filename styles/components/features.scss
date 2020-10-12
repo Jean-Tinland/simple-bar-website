@@ -16,16 +16,16 @@
 }
 .features__title {
   margin-bottom: 15px;
-  @include title;
+  @include title($primary);
 }
 .features__subtitle {
-  @include title(#fff, 14px, 17px);
+  @include title($primary, 14px, 17px);
 }
 .features__subtitle > span {
   padding: 3px 5px;
-  @include title(#fff, 12px, 15px);
+  @include title($primary, 12px, 15px);
   font-family: $mono-font;
-  background-color: $primary-light;
+  background-color: rgba($primary, 0.05);
   border-radius: 3px;
 }
 .features__inner {
@@ -61,9 +61,9 @@
   flex-direction: column;
   align-items: center;
   margin-right: auto;
-  background-color: rgba($primary-light, 0.3);
+  background-color: #fff;
   border-radius: $radius;
-  box-shadow: $shadow-large;
+  filter: drop-shadow($shadow-large);
   opacity: 0;
   transform: translateY(100px);
   transition: opacity 160ms $transition-easing, transform 160ms $transition-easing;
@@ -71,7 +71,6 @@
     flex-direction: row;
     padding: 15px;
     overflow: hidden;
-    box-shadow: none;
   }
 }
 .feature--in-view .feature__inner {
@@ -84,7 +83,7 @@
     position: absolute;
     top: -14px;
     left: -4px;
-    @include title(rgba(#fff, 0.1), 30px, 60px, false, true);
+    @include title(rgba($primary, 0.2), 30px, 60px, false, true);
     font-family: $mono-font;
   }
 }
@@ -114,15 +113,15 @@
 }
 .feature__title {
   margin-bottom: 10px;
-  @include title(#fff, 15px, 19px, true, true);
+  @include title($primary, 15px, 19px, true, true);
 }
 .feature__description {
-  @include text;
+  @include text($primary);
 }
 .feature__description span {
   display: block;
   padding: 10px 15px;
-  background-color: $primary;
+  background-color: rgba($primary, 0.05);
   border-radius: 5px;
 }
 .feature__right > img {
