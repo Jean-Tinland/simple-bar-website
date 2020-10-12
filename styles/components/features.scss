@@ -34,7 +34,10 @@
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  padding: 50px 0;
+  padding: 25px 0;
+  @media (min-width: 992px) {
+    padding: 50px 0;
+  }
 }
 .feature {
   position: relative;
@@ -47,7 +50,10 @@
   }
 }
 .feature:not(:last-of-type) {
-  margin-bottom: 50px;
+  margin-bottom: 25px;
+  @media (min-width: 992px) {
+    margin-bottom: 50px;
+  }
 }
 .feature:nth-of-type(even) {
   @media (min-width: 750px) {
@@ -63,7 +69,7 @@
   margin-right: auto;
   background-color: #fff;
   border-radius: $radius;
-  filter: drop-shadow($shadow-large);
+  filter: drop-shadow($shadow-medium);
   opacity: 0;
   transform: translateY(100px);
   transition: opacity 160ms $transition-easing, transform 160ms $transition-easing;
@@ -81,15 +87,15 @@
   @media (min-width: 750px) {
     content: attr(data-id);
     position: absolute;
-    top: -14px;
-    left: -4px;
-    @include title(rgba($primary, 0.2), 30px, 60px, false, true);
+    top: -18px;
+    left: -6px;
+    @include title(rgba($primary, 0.05), 30px, 70px, false, true);
     font-family: $mono-font;
   }
 }
 .feature:nth-of-type(even) .feature__inner::before {
   left: unset;
-  right: -4px;
+  right: -6px;
 }
 .feature__left,
 .feature__right {
@@ -113,16 +119,26 @@
 }
 .feature__title {
   margin-bottom: 10px;
-  @include title($primary, 15px, 19px, true, true);
+  @include title($primary, 16px, 22px, true, true);
+  font-family: $mono-font;
 }
 .feature__description {
   @include text($primary);
 }
-.feature__description span {
+.feature__description > span {
   display: block;
   padding: 10px 15px;
+  @include text($primary, 11px, 14px);
   background-color: rgba($primary, 0.05);
   border-radius: 5px;
+}
+.feature__description > span > span {
+  padding: 3px 5px;
+  font-weight: 700;
+  font-family: $mono-font;
+  white-space: nowrap;
+  background-color: #fff;
+  border-radius: 3px;
 }
 .feature__right > img {
   border-radius: $radius $radius 0 0;

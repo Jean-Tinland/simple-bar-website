@@ -12,8 +12,6 @@ body {
   color: $primary;
   background-color: $primary;
   -webkit-font-smoothing: antialiased;
-  -ms-overflow-style: auto;
-  touch-action: cross-slide-x pan-y;
 }
 #__next {
   width: inherit;

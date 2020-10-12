@@ -43,7 +43,7 @@ export const locales = {
       'Stay updated with a selection of data widgets: <b>current browser song</b>, <b>Spotify current track</b> (with play/pause state), <b>battery level</b>, <b>microphone & sound</b>, <b>wifi</b>, <b>date & time</b>.<br/><br/><b>Some of them are interactive</b>: play/pause Spotify, mute/unmute microphone, toggle wifi on click.',
     'feature-4-title': 'Settings module',
     'feature-4-description':
-      'Playing with simple-bar settings, you can for example <b>customize its layout</b> or <b>enable/disable individual global information widgets</b>.<br/><br/>Try it out to discover every possibilities!',
+      'Playing with simple-bar settings, you can for example <b>customize its layout</b> or <b>enable/disable individual global information widgets</b>.<br/><br/>Try it out to discover every possibilities!<br/><br/><span>Start by opening an empty workspace. Click on the current process widget then press <span>cmd + ,</span> to open settings.</span>',
 
     'compatibility-subtitle': "Before installing <span>simple-bar</span>, you'll need to meet some prerequisites.",
     'compatibility-description-title-1': 'OS version',
@@ -51,7 +51,7 @@ export const locales = {
       "<span>simple-bar</span> has been fully tested on <b>macos Catalina</b>. As I'm working on Catalina, I haven't tested this widget on older versions of macos and on macos 11 Big Sur either.",
     'compatibility-description-title-2': 'Screen size',
     'compatibility-description-2':
-      'You\'ll need a screen with a size of <b>13"</b> at least with your screen resolution scaled on "More space" setting.',
+      'You\'ll need a screen with a size of <b>13"</b> at least with your screen resolution scaled on "More space" setting.<br/><span>simple-bar</span> will work on smaller screens but you\'ll need to make a choice between the widgets you want to display.',
     'compatibility-description-title-3': 'Softwares/dependencies',
     'compatibility-description-3':
       'In order to make <span>simple-bar</span> work, you\'ll need to install both <a href="https://github.com/koekeishiya/yabai" target="_blank" rel="noopener, noreferrer">yabai</a> and <a href="http://tracesof.net/uebersicht/" target="_blank" rel="noopener, noreferrer">Übersicht</a> and keep it up to date. Follow the installation instruction on each link. Feel free to open an issue <a href="https://github.com/Jean-Tinland/simple-bar/issues" target="_blank" rel="noopener, noreferrer">here</a> if you need help during the process.',
@@ -106,7 +106,7 @@ export const locales = {
       "Restez à jour d'un coup d'oeil rapide à l'aide de la sélection de widgets suivante : <b>musique en cours dans votre navigateur</b>, <b>musique en cours dans l'appli Spotify</b>, <b>niveau de batterie</b>, <b>microphone & volume sonore</b>, <b>wifi</b>, <b>date & heure</b>.<br/><br/><b>Certains d'entres eux sont interactifs</b> : mettez Spotify sur pause, coupez/allumez le microphone, désactivez le wifi au clic.",
     'feature-4-title': 'Paramètres',
     'feature-4-description':
-      "En jouant avec les paramètres de simple-bar, vous pouvez par exemple <b>changer sa disposition</b> or <b>activer/désactivez certains widgets d'informations</b>.<br/><br/>Essayez le afin de découvrir toutes les possibilités !",
+      "En jouant avec les paramètres de simple-bar, vous pouvez par exemple <b>changer sa disposition</b> or <b>activer/désactivez certains widgets d'informations</b>.<br/><br/>Essayez le afin de découvrir toutes les possibilités !<br/><br/><span>Commencez par ouvrir un espace de travail vide. Cliquez sur le widget affichant le processus courant puis appuyez sur les touches <span>cmd + ,</span> simultanément pour afficher les paramètres.</span>",
 
     'compatibility-subtitle': "Avant d'installer <span>simple-bar</span>, vous devrez remplir certains pré-requis.",
     'compatibility-description-title-1': 'Version de mac OS',
@@ -114,7 +114,7 @@ export const locales = {
       "<span>simple-bar</span> fonctionne sur <b>mac OS Catalina</b>. Je travaille exclusivement Catalina, de fait, ce widget n'a pas été testé sur les versions plus anciennes de mac OS ni sur Big Sur.",
     'compatibility-description-title-2': "Taille d'écran",
     'compatibility-description-2':
-      "Vous aurez besoin d'un écran ayant une taille de <b>13 pouces minimum</b> avec une résolution mise à l'échelle sur le paramètre <b>\"plus d'espace\"</b>.",
+      "Vous aurez besoin d'un écran ayant une taille de <b>13 pouces minimum</b> avec une résolution mise à l'échelle sur le paramètre <b>\"plus d'espace\"</b>.<br/><span>simple-bar</span> peut fonctionner sur un écran plus petit mais vous devrez faire des choix sur le nombre de widgets à afficher.",
     'compatibility-description-title-3': 'Logiciels/dépendances',
     'compatibility-description-3':
       'Afin de faire fonctionner <span>simple-bar</span>, vous aurez besoin d\'installer à la fois <a href="https://github.com/koekeishiya/yabai" target="_blank" rel="noopener, noreferrer">yabai</a> et <a href="http://tracesof.net/uebersicht/" target="_blank" rel="noopener, noreferrer">Übersicht</a>. Il est nécessaire de <b>garder ces 2 logiciels à jour</b>. Suivez les procédures d\'installation. N\'hésitez pas à ouvrir une issue <a href="https://github.com/Jean-Tinland/simple-bar/issues" target="_blank" rel="noopener, noreferrer">ici</a> si vous avez besoin d\'aide',
