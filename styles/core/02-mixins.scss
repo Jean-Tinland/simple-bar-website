@@ -46,7 +46,7 @@
     white-space: nowrap;
     text-decoration: none;
     z-index: 0;
-    transition: color 160ms $transition-easing, box-shadow 160ms $transition-easing;
+    transition: color 160ms $transition-easing;
     border-radius: $radius / 2;
     &::after {
       content: '';
@@ -61,7 +61,7 @@
       pointer-events: none;
       touch-action: none;
       z-index: -1;
-      transition: max-height 160ms $transition-easing;
+      transition: max-height 160ms $transition-easing, box-shadow 160ms $transition-easing;
     }
     &:hover,
     &:focus {
@@ -75,7 +75,9 @@
     }
     &:focus {
       outline: none;
-      box-shadow: $focus-ring;
+      &::after {
+        box-shadow: $focus-ring;
+      }
     }
   }
   &[contentEditable='true'] a {
