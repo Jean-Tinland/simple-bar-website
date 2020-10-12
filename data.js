@@ -5,7 +5,8 @@ export const locales = {
     'home-title': 'simple-bar - An Übersicht status bar widget for yabai',
 
     'introduction-title': 'simple-bar',
-    'introduction-tagline': 'An <span>Übersicht</span> status bar widget for <span>yabai</span>',
+    'introduction-tagline':
+      'An <a href="http://tracesof.net/uebersicht/" target="_blank" rel="noopener, noreferrer">Übersicht</a> status bar widget for <a href="https://github.com/koekeishiya/yabai" target="_blank" rel="noopener, noreferrer">yabai</a>',
 
     'wifi-active': 'Awesome wifi',
     'wifi-inactive': 'Disabled',
@@ -41,13 +42,16 @@ export const locales = {
       'Stay updated with a selection of data widgets: <b>current browser song</b>, <b>Spotify current track</b> (with play/pause state), <b>battery level</b>, <b>microphone & sound</b>, <b>wifi</b>, <b>date & time</b>.</br></br><b>Some of them are interactive</b>: play/pause Spotify, mute/unmute microphone, toggle wifi on click.',
     'feature-4-title': 'Settings module',
     'feature-4-description':
-      'Playing with simple-bar settings, you can for example <b>customize its layout</b> or <b>enable/disable individual global information widgets</b>.</br></br>Try it out to discover every possibilities!'
+      'Playing with simple-bar settings, you can for example <b>customize its layout</b> or <b>enable/disable individual global information widgets</b>.</br></br>Try it out to discover every possibilities!',
+
+    'compatibility-subtitle': "Before installing <span>simple-bar</span>, you'll need to meet some prerequisites."
   },
   fr: {
     'home-title': 'simple-bar - Un widget Übersicht pour yabai',
 
     'introduction-title': 'simple-bar',
-    'introduction-tagline': 'Un widget <span>Übersicht</span> pour <span>yabai</span>',
+    'introduction-tagline':
+      'Un widget <a href="http://tracesof.net/uebersicht/" target="_blank" rel="noopener, noreferrer">Übersicht</a> pour <a href="https://github.com/koekeishiya/yabai" target="_blank" rel="noopener, noreferrer">yabai</a>',
 
     'wifi-active': 'Votre wifi',
     'wifi-inactive': 'Désactivé',
@@ -83,7 +87,9 @@ export const locales = {
       "Restez à jour d'un coup d'oeil rapide à l'aide de la sélection de widgets suivante : <b>musique en cours dans votre navigateur</b>, <b>musique en cours dans l'appli Spotify</b>, <b>niveau de batterie</b>, <b>microphone & volume sonore</b>, <b>wifi</b>, <b>date & heure</b>.</br></br><b>Certains d'entres eux sont interactifs</b> : mettez Spotify sur pause, coupez/allumez le microphone, désactivez le wifi au clic.",
     'feature-4-title': 'Paramètres',
     'feature-4-description':
-      "En jouant avec les paramètres de simple-bar, vous pouvez par exemple <b>changer sa disposition</b> or <b>activer/désactivez certains widgets d'informations</b>.</br></br>Essayez le afin de découvrir toutes les possibilités !"
+      "En jouant avec les paramètres de simple-bar, vous pouvez par exemple <b>changer sa disposition</b> or <b>activer/désactivez certains widgets d'informations</b>.</br></br>Essayez le afin de découvrir toutes les possibilités !",
+
+    'compatibility-subtitle': "Avant d'installer <span>simple-bar</span>, vous devrez remplir certains pré-requis."
   }
 }
 

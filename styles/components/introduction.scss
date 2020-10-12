@@ -14,12 +14,17 @@
 .introduction__tagline {
   @include text;
 }
-.introduction__tagline > span {
+.introduction__tagline > a {
   padding: 3px 5px;
   @include text(#fff, 11px, 14px);
+  text-decoration: none;
   font-family: $mono-font;
   background-color: $primary-light;
   border-radius: 3px;
+  transition: color 160ms $transition-easing;
+}
+.introduction__tagline > a:hover {
+  color: $yellow;
 }
 .introduction__data {
   display: flex;
