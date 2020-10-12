@@ -62,7 +62,7 @@ export const locales = {
     'installation-description-2':
       'If <b>Übersicht</b> is launched, you should see the bar directly appearing on your screen!',
     'installation-description-3':
-      'The last thing you\'ll need to do is downloading <a href="https://www.jetbrains.com/lp/mono/" target="_blank" rel="noopener, noreferrer">JetBrains Mono</a> font and install it.<br/>'
+      'The last thing you need to do is downloading <a href="https://www.jetbrains.com/lp/mono/" target="_blank" rel="noopener, noreferrer">JetBrains Mono</a> font and install it.<br/>'
   },
   fr: {
     'home-title': 'simple-bar - Un widget Übersicht pour yabai',
@@ -174,9 +174,9 @@ export const introductionMenuItems = (lang) => [
   {
     code: 'installation',
     name: locales[lang]['menu-installation']
-  },
-  {
-    code: 'gallery',
-    name: locales[lang]['menu-gallery']
   }
+  // ,{
+  //   code: 'gallery',
+  //   name: locales[lang]['menu-gallery']
+  // }
 ]

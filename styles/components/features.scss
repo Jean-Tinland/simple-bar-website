@@ -134,6 +134,7 @@
 }
 .feature__description > span > span {
   padding: 3px 5px;
+  @include text($primary, 10px, 13px);
   font-weight: 700;
   font-family: $mono-font;
   white-space: nowrap;
