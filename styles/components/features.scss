@@ -34,7 +34,7 @@
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  padding: 25px 0;
+  padding: 50px 0;
 }
 .feature {
   position: relative;
@@ -45,6 +45,9 @@
     max-width: 1000px;
     margin: 0;
   }
+}
+.feature:not(:last-of-type) {
+  margin-bottom: 50px;
 }
 .feature:nth-of-type(even) {
   @media (min-width: 750px) {
@@ -88,9 +91,6 @@
 .feature:nth-of-type(even) .feature__inner::before {
   left: unset;
   right: -4px;
-}
-.feature:not(:last-of-type) {
-  margin-bottom: 20px;
 }
 .feature__left,
 .feature__right {
