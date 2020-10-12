@@ -28,6 +28,7 @@ export const locales = {
     'menu-features': 'Features',
     'menu-compatibility': 'Compatibility & requirements',
     'menu-installation': 'Installation',
+    'menu-gallery': 'Gallery',
 
     'features-subtitle': '<span>simple-bar</span> is splitted in <b>4</b> main widgets',
 
@@ -44,7 +45,16 @@ export const locales = {
     'feature-4-description':
       'Playing with simple-bar settings, you can for example <b>customize its layout</b> or <b>enable/disable individual global information widgets</b>.</br></br>Try it out to discover every possibilities!',
 
-    'compatibility-subtitle': "Before installing <span>simple-bar</span>, you'll need to meet some prerequisites."
+    'compatibility-subtitle': "Before installing <span>simple-bar</span>, you'll need to meet some prerequisites.",
+    'compatibility-description-title-1': 'OS version',
+    'compatibility-description-1':
+      "<span>simple-bar</span> has been fully tested on <b>macos Catalina</b>. As I'm working on Catalina, I haven't tested this widget on older versions of macos and on macos 11 Big Sur either.",
+    'compatibility-description-title-2': 'Screen size',
+    'compatibility-description-2':
+      'You\'ll need a screen with a size of <b>13"</b> at least with your screen resolution scaled on "More space" setting.',
+    'compatibility-description-title-3': 'Softwares/dependencies',
+    'compatibility-description-3':
+      'In order to make <span>simple-bar</span> work, you\'ll need to install both <a href="https://github.com/koekeishiya/yabai" target="_blank" rel="noopener, noreferrer">yabai</a> and <a href="http://tracesof.net/uebersicht/" target="_blank" rel="noopener, noreferrer">Übersicht</a> and keep it up to date. Follow the installation instruction on each link. Feel free to open an issue <a href="https://github.com/Jean-Tinland/simple-bar/issues" target="_blank" rel="noopener, noreferrer">here</a> if you need help during the process.'
   },
   fr: {
     'home-title': 'simple-bar - Un widget Übersicht pour yabai',
@@ -73,6 +83,7 @@ export const locales = {
     'menu-features': 'Fonctionnalités',
     'menu-compatibility': 'Compatibilité & pré-requis',
     'menu-installation': 'Installation',
+    'menu-gallery': 'Gallerie',
 
     'features-subtitle': '<span>simple-bar</span> est composé de <b>4</b> widgets principaux',
 
@@ -89,7 +100,16 @@ export const locales = {
     'feature-4-description':
       "En jouant avec les paramètres de simple-bar, vous pouvez par exemple <b>changer sa disposition</b> or <b>activer/désactivez certains widgets d'informations</b>.</br></br>Essayez le afin de découvrir toutes les possibilités !",
 
-    'compatibility-subtitle': "Avant d'installer <span>simple-bar</span>, vous devrez remplir certains pré-requis."
+    'compatibility-subtitle': "Avant d'installer <span>simple-bar</span>, vous devrez remplir certains pré-requis.",
+    'compatibility-description-title-1': 'Version de mac OS',
+    'compatibility-description-1':
+      "<span>simple-bar</span> fonctionne sur <b>mac OS Catalina</b>. Je travaille exclusivement Catalina, de fait, ce widget n'a pas été testé sur les versions plus anciennes de mac OS ni sur Big Sur.",
+    'compatibility-description-title-2': "Taille d'écran",
+    'compatibility-description-2':
+      "Vous aurez besoin d'un écran ayant une taille de <b>13 pouces minimum</b> avec une résolution mise à l'échelle sur le paramètre <b>\"plus d'espace\"</b>.",
+    'compatibility-description-title-3': 'Logiciels/dépendances',
+    'compatibility-description-3':
+      'Afin de faire fonctionner <span>simple-bar</span>, vous aurez besoin d\'installer à la fois <a href="https://github.com/koekeishiya/yabai" target="_blank" rel="noopener, noreferrer">yabai</a> et <a href="http://tracesof.net/uebersicht/" target="_blank" rel="noopener, noreferrer">Übersicht</a>. Il est nécessaire de <b>garder ces 2 logiciels à jour</b>. Suivez les procédures d\'installation. N\'hésitez pas à ouvrir une issue <a href="https://github.com/Jean-Tinland/simple-bar/issues" target="_blank" rel="noopener, noreferrer">ici</a> si vous avez besoin d\'aide'
   }
 }
 
@@ -138,5 +158,9 @@ export const introductionMenuItems = (lang) => [
   {
     code: 'installation',
     name: locales[lang]['menu-installation']
+  },
+  {
+    code: 'gallery',
+    name: locales[lang]['menu-gallery']
   }
 ]

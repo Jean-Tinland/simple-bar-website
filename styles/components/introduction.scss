@@ -87,8 +87,12 @@
     margin: 0 0 0 10px;
   }
 }
-.introduction__menu-item:hover {
+.introduction__menu-item:hover,
+.introduction__menu-item:focus {
   color: $yellow;
+}
+.introduction__menu-item:focus {
+  outline: none;
 }
 .introduction__menu-item:not(:first-of-type)::before {
   @media (min-width: 700px) {
@@ -97,7 +101,8 @@
     color: #fff;
   }
 }
-.introduction__menu-item:hover::before {
+.introduction__menu-item:hover::before,
+.introduction__menu-item:focus::before {
   color: #fff;
 }
 

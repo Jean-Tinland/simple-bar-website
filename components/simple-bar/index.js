@@ -20,19 +20,19 @@ const SimpleBar = ({ lang }) => {
   const currentApp = currentApps[0]
 
   const removeHover = () => {
-    const elements = ref.current.querySelectorAll('.auto-hover')
+    const elements = ref.current && ref.current.querySelectorAll('.auto-hover')
     Array.prototype.forEach.call(elements, (el) => el.classList.remove('auto-hover'))
   }
 
   const click = useCallback((selector) => {
     removeHover()
-    const target = ref.current.querySelector(selector)
+    const target = ref.current && ref.current.querySelector(selector)
     target && target.click()
   }, [])
 
   const hover = useCallback((selector) => {
     removeHover()
-    const target = ref.current.querySelector(selector)
+    const target = ref.current && ref.current.querySelector(selector)
     target && target.classList.add('auto-hover')
   }, [])
 

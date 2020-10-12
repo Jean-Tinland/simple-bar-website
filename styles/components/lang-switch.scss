@@ -1,7 +1,5 @@
 .lang-switch {
-  position: fixed;
-  top: 25px;
-  right: 25px;
+  margin-left: 20px;
   padding: 5px;
   color: #fff;
   font-size: 13px;
@@ -9,6 +7,8 @@
   text-decoration: none;
   font-family: $mono-font;
   border-radius: 3px;
+  pointer-events: auto;
+  touch-action: auto;
   transition: background-color 160ms $transition-easing, box-shadow 160ms $transition-easing;
 }
 .lang-switch:hover {

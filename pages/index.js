@@ -1,10 +1,10 @@
 import * as React from 'react'
 import Head from 'next/head'
-import LangSwitch from '../components/lang-switch'
+import Navigation from '../components/navigation'
 import Introduction from '../components/introduction'
 import Section from '../components/section'
 import Features from '../components/features'
-// import Compatibility from '../components/compatibility'
+import Compatibility from '../components/compatibility'
 import message from '../components/messages'
 
 const Home = ({ lang }) => {
@@ -15,14 +15,14 @@ const Home = ({ lang }) => {
         <link rel="icon" href="/favicon.ico" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
       </Head>
-      <LangSwitch lang={lang} />
+      <Navigation lang={lang} />
       <Introduction lang={lang} />
       <Section id="features" dark>
         <Features lang={lang} />
       </Section>
-      {/* <Section id="compatibility">
+      <Section id="compatibility" noMinHeight>
         <Compatibility lang={lang} />
-      </Section> */}
+      </Section>
     </div>
   )
 }
