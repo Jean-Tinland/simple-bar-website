@@ -1,0 +1,79 @@
+.terminal {
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: 25px auto;
+  padding: 65px 25px 25px 25px;
+  background-color: $primary-light;
+  border-radius: $radius;
+}
+.terminal__dots {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  display: flex;
+}
+.terminal__dot {
+  width: 11px;
+  height: 11px;
+  margin-right: 8px;
+  border-radius: 50%;
+}
+.terminal__dot:nth-of-type(1) {
+  background-color: #ff605c;
+}
+.terminal__dot:nth-of-type(2) {
+  background-color: #ffbd44;
+}
+.terminal__dot:nth-of-type(3) {
+  background-color: #00ca4e;
+}
+.terminal__icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+  cursor: pointer;
+  user-select: none;
+}
+.terminal__icon--clicked {
+  fill: $green;
+  animation: terminal-icon-clicked 160ms $transition-easing;
+}
+@keyframes terminal-icon-clicked {
+  50% {
+    transform: scale(1.3);
+  }
+}
+.terminal__command {
+  @include text(#fff, 11px, 13px, 1.75);
+  font-family: $mono-font;
+}
+.terminal__command > span > span:nth-child(1),
+.terminal__command > span > span:nth-child(2) {
+  font-weight: 700;
+}
+.terminal__command > span > span:nth-child(1) {
+  color: $green;
+}
+.terminal__command > span > span:nth-child(2) {
+  color: $yellow;
+}
+.terminal__cursor {
+  width: 2px;
+  height: 15px;
+  display: inline-block;
+  margin: 0 0 2px 3px;
+  background-color: $yellow;
+  animation: terminal-blinking-cursor 800ms $transition-easing infinite;
+}
+@keyframes terminal-blinking-cursor {
+  50% {
+    opacity: 0;
+  }
+}

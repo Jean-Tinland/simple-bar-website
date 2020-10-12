@@ -40,10 +40,10 @@ export const locales = {
       'This widget goal is to display <b>each one of your spaces</b> and for each of them show you <b>all opened apps</b>. The currently focused space is highlited.<br/><br/>You can directy <b>go to a specific space</b> simply <b>by clicking on it</b>, no need to repeat five time the same gesture anymore!<br/><br/><span><i>Only with SIP disabled:</i><br/><b>Create</b>, <b>move</b> and <b>destroy</b> worspaces!</span>',
     'feature-3-title': 'Global information',
     'feature-3-description':
-      'Stay updated with a selection of data widgets: <b>current browser song</b>, <b>Spotify current track</b> (with play/pause state), <b>battery level</b>, <b>microphone & sound</b>, <b>wifi</b>, <b>date & time</b>.</br></br><b>Some of them are interactive</b>: play/pause Spotify, mute/unmute microphone, toggle wifi on click.',
+      'Stay updated with a selection of data widgets: <b>current browser song</b>, <b>Spotify current track</b> (with play/pause state), <b>battery level</b>, <b>microphone & sound</b>, <b>wifi</b>, <b>date & time</b>.<br/><br/><b>Some of them are interactive</b>: play/pause Spotify, mute/unmute microphone, toggle wifi on click.',
     'feature-4-title': 'Settings module',
     'feature-4-description':
-      'Playing with simple-bar settings, you can for example <b>customize its layout</b> or <b>enable/disable individual global information widgets</b>.</br></br>Try it out to discover every possibilities!',
+      'Playing with simple-bar settings, you can for example <b>customize its layout</b> or <b>enable/disable individual global information widgets</b>.<br/><br/>Try it out to discover every possibilities!',
 
     'compatibility-subtitle': "Before installing <span>simple-bar</span>, you'll need to meet some prerequisites.",
     'compatibility-description-title-1': 'OS version',
@@ -54,7 +54,15 @@ export const locales = {
       'You\'ll need a screen with a size of <b>13"</b> at least with your screen resolution scaled on "More space" setting.',
     'compatibility-description-title-3': 'Softwares/dependencies',
     'compatibility-description-3':
-      'In order to make <span>simple-bar</span> work, you\'ll need to install both <a href="https://github.com/koekeishiya/yabai" target="_blank" rel="noopener, noreferrer">yabai</a> and <a href="http://tracesof.net/uebersicht/" target="_blank" rel="noopener, noreferrer">Übersicht</a> and keep it up to date. Follow the installation instruction on each link. Feel free to open an issue <a href="https://github.com/Jean-Tinland/simple-bar/issues" target="_blank" rel="noopener, noreferrer">here</a> if you need help during the process.'
+      'In order to make <span>simple-bar</span> work, you\'ll need to install both <a href="https://github.com/koekeishiya/yabai" target="_blank" rel="noopener, noreferrer">yabai</a> and <a href="http://tracesof.net/uebersicht/" target="_blank" rel="noopener, noreferrer">Übersicht</a> and keep it up to date. Follow the installation instruction on each link. Feel free to open an issue <a href="https://github.com/Jean-Tinland/simple-bar/issues" target="_blank" rel="noopener, noreferrer">here</a> if you need help during the process.',
+
+    'installation-subtitle': 'Follow the procedure below installing <span>simple-bar</span>',
+    'installation-description-1':
+      'Clone the <span>simple-bar</span> repo to your Übersicht widgets directory with the following command.',
+    'installation-description-2':
+      'If <b>Übersicht</b> is launched, you should see the bar directly appearing on your screen!',
+    'installation-description-3':
+      'The last thing you\'ll need to do is downloading <a href="https://www.jetbrains.com/lp/mono/" target="_blank" rel="noopener, noreferrer">JetBrains Mono</a> font and install it.<br/>'
   },
   fr: {
     'home-title': 'simple-bar - Un widget Übersicht pour yabai',
@@ -95,10 +103,10 @@ export const locales = {
       "Le but de ce widget est de représenter <b>chacun de vos espaces de travail</b> et pour chacun d'entre eux d'afficher <b>toutes les applications ouvertes</b>. L'espace courant est mis en avant.<br/><br/>Vous pouvez <b>vous rendre directement à une espace</b> simplement <b>en cliquant dessus</b>, plus besoin de répéter 5 fois le même geste !<br/><br/><span><i>Seulement en désactivant la SIP :</i><br/><b>Créez</b>, <b>déplacez</b> et <b>supprimez</b> des espaces !</span>",
     'feature-3-title': 'Information générales',
     'feature-3-description':
-      "Restez à jour d'un coup d'oeil rapide à l'aide de la sélection de widgets suivante : <b>musique en cours dans votre navigateur</b>, <b>musique en cours dans l'appli Spotify</b>, <b>niveau de batterie</b>, <b>microphone & volume sonore</b>, <b>wifi</b>, <b>date & heure</b>.</br></br><b>Certains d'entres eux sont interactifs</b> : mettez Spotify sur pause, coupez/allumez le microphone, désactivez le wifi au clic.",
+      "Restez à jour d'un coup d'oeil rapide à l'aide de la sélection de widgets suivante : <b>musique en cours dans votre navigateur</b>, <b>musique en cours dans l'appli Spotify</b>, <b>niveau de batterie</b>, <b>microphone & volume sonore</b>, <b>wifi</b>, <b>date & heure</b>.<br/><br/><b>Certains d'entres eux sont interactifs</b> : mettez Spotify sur pause, coupez/allumez le microphone, désactivez le wifi au clic.",
     'feature-4-title': 'Paramètres',
     'feature-4-description':
-      "En jouant avec les paramètres de simple-bar, vous pouvez par exemple <b>changer sa disposition</b> or <b>activer/désactivez certains widgets d'informations</b>.</br></br>Essayez le afin de découvrir toutes les possibilités !",
+      "En jouant avec les paramètres de simple-bar, vous pouvez par exemple <b>changer sa disposition</b> or <b>activer/désactivez certains widgets d'informations</b>.<br/><br/>Essayez le afin de découvrir toutes les possibilités !",
 
     'compatibility-subtitle': "Avant d'installer <span>simple-bar</span>, vous devrez remplir certains pré-requis.",
     'compatibility-description-title-1': 'Version de mac OS',
@@ -109,7 +117,15 @@ export const locales = {
       "Vous aurez besoin d'un écran ayant une taille de <b>13 pouces minimum</b> avec une résolution mise à l'échelle sur le paramètre <b>\"plus d'espace\"</b>.",
     'compatibility-description-title-3': 'Logiciels/dépendances',
     'compatibility-description-3':
-      'Afin de faire fonctionner <span>simple-bar</span>, vous aurez besoin d\'installer à la fois <a href="https://github.com/koekeishiya/yabai" target="_blank" rel="noopener, noreferrer">yabai</a> et <a href="http://tracesof.net/uebersicht/" target="_blank" rel="noopener, noreferrer">Übersicht</a>. Il est nécessaire de <b>garder ces 2 logiciels à jour</b>. Suivez les procédures d\'installation. N\'hésitez pas à ouvrir une issue <a href="https://github.com/Jean-Tinland/simple-bar/issues" target="_blank" rel="noopener, noreferrer">ici</a> si vous avez besoin d\'aide'
+      'Afin de faire fonctionner <span>simple-bar</span>, vous aurez besoin d\'installer à la fois <a href="https://github.com/koekeishiya/yabai" target="_blank" rel="noopener, noreferrer">yabai</a> et <a href="http://tracesof.net/uebersicht/" target="_blank" rel="noopener, noreferrer">Übersicht</a>. Il est nécessaire de <b>garder ces 2 logiciels à jour</b>. Suivez les procédures d\'installation. N\'hésitez pas à ouvrir une issue <a href="https://github.com/Jean-Tinland/simple-bar/issues" target="_blank" rel="noopener, noreferrer">ici</a> si vous avez besoin d\'aide',
+
+    'installation-subtitle': 'Suivez la procédure ci-dessous pour installer <span>simple-bar</span>',
+    'installation-description-1':
+      "Clonez le repo <span>simple-bar</span> dans le répertoire de widgets d'Übersicht avec la commande suivante.",
+    'installation-description-2':
+      'Si <b>Übersicht</b> est lancé, vous devriez directement voir la barre apparaitre sur votre écran !',
+    'installation-description-3':
+      'Pour finir, vous aurez besoin de télécharger la police <a href="https://www.jetbrains.com/lp/mono/" target="_blank" rel="noopener, noreferrer">JetBrains Mono</a> puis installer cette dernière. Dans le cas contraire, la police "monospace" par défaut de votre système sera utilisée.<br/>'
   }
 }
 

@@ -43,8 +43,9 @@
     position: relative;
     padding: 0 3px;
     color: $color;
-    white-space: nowrap;
     text-decoration: none;
+    font-weight: 700;
+    white-space: nowrap;
     z-index: 0;
     transition: color 160ms $transition-easing;
     border-radius: $radius / 2;

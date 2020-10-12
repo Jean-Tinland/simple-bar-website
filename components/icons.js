@@ -153,6 +153,18 @@ export const StopIcon = (props) => (
   </Icon>
 )
 
+export const CopyIcon = (props) => (
+  <Icon {...props}>
+    <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+  </Icon>
+)
+
+export const CheckIcon = (props) => (
+  <Icon {...props}>
+    <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z" />
+  </Icon>
+)
+
 export const DefaultIcon = (props) => (
   <Icon {...props}>
     <path

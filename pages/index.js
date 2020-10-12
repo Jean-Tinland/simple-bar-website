@@ -5,6 +5,7 @@ import Introduction from '../components/introduction'
 import Section from '../components/section'
 import Features from '../components/features'
 import Compatibility from '../components/compatibility'
+import Installation from '../components/installation'
 import message from '../components/messages'
 
 const Home = ({ lang }) => {
@@ -20,8 +21,11 @@ const Home = ({ lang }) => {
       <Section id="features" dark>
         <Features lang={lang} />
       </Section>
-      <Section id="compatibility" noMinHeight>
+      <Section id="compatibility">
         <Compatibility lang={lang} />
+      </Section>
+      <Section id="installation" dark>
+        <Installation lang={lang} />
       </Section>
     </div>
   )

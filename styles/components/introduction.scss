@@ -113,6 +113,7 @@
 .introduction__menu {
   opacity: 0;
   transform: translateY(100px);
+  transition: opacity 160ms $transition-easing, transform 160ms $transition-easing;
 }
 @for $i from 1 through 5 {
   .introduction > *:nth-child(#{$i}) {

@@ -1,10 +1,9 @@
 import * as React from 'react'
 import classnames from 'classnames'
 
-const Section = ({ id, dark, noMinHeight, children }) => {
+const Section = ({ id, dark, children }) => {
   const classes = classnames(`section section--${id}`, {
-    'section--dark': dark,
-    'section--no-min-height': noMinHeight
+    'section--dark': dark
   })
   return (
     <section id={id} className={classes}>

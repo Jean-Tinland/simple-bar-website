@@ -30,7 +30,7 @@ const Introduction = ({ lang }) => {
     getData()
   }, [])
 
-  useInView(ref, undefined, true, 0.5, true)
+  useInView(ref, undefined, true, 0.3, true)
 
   return (
     <div ref={ref} className="introduction">

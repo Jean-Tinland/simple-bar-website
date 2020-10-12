@@ -1,9 +1,5 @@
 .section {
-  min-height: 100vh;
   background-color: $primary;
-}
-.section--no-min-height {
-  min-height: auto;
 }
 .section--dark {
   background-color: $primary-dark;

@@ -7,7 +7,7 @@ import useInView from '../hooks/use-in-view'
 const Compatibility = ({ lang }) => {
   const ref = useRef()
 
-  useInView(ref, undefined, true, 0.5, true)
+  useInView(ref, undefined, true, 0.3, true)
   return (
     <div ref={ref} className="compatibility">
       <div className="compatibility__title">{message(lang, 'menu-compatibility')}</div>
