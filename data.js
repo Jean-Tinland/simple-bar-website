@@ -62,7 +62,10 @@ export const locales = {
     'installation-description-2':
       'If <b>Übersicht</b> is launched, you should see the bar directly appearing on your screen!',
     'installation-description-3':
-      'The last thing you need to do is downloading <a href="https://www.jetbrains.com/lp/mono/" target="_blank" rel="noopener, noreferrer">JetBrains Mono</a> font and install it.<br/>'
+      'The last thing you need to do is downloading <a href="https://www.jetbrains.com/lp/mono/" target="_blank" rel="noopener, noreferrer">JetBrains Mono</a> font and install it.<br/>',
+
+    'gallery-subtitle':
+      'Feel free to open an issue <a href="https://github.com/Jean-Tinland/simple-bar-website/issues">here</a>, I\'ll add your screenshots below.'
   },
   fr: {
     'home-title': 'simple-bar - Un widget Übersicht pour yabai',
@@ -125,7 +128,10 @@ export const locales = {
     'installation-description-2':
       'Si <b>Übersicht</b> est lancé, vous devriez directement voir la barre apparaitre sur votre écran !',
     'installation-description-3':
-      'Pour finir, vous aurez besoin de télécharger la police <a href="https://www.jetbrains.com/lp/mono/" target="_blank" rel="noopener, noreferrer">JetBrains Mono</a> puis installer cette dernière. Dans le cas contraire, la police "monospace" par défaut de votre système sera utilisée.<br/>'
+      'Pour finir, vous aurez besoin de télécharger la police <a href="https://www.jetbrains.com/lp/mono/" target="_blank" rel="noopener, noreferrer">JetBrains Mono</a> puis installer cette dernière. Dans le cas contraire, la police "monospace" par défaut de votre système sera utilisée.<br/>',
+
+    'gallery-subtitle':
+      "N'hésitez pas à ouvrir un ticket <a href=\"https://github.com/Jean-Tinland/simple-bar-website/issues\">ici</a>, j'ajouterai vos captures d'écran ci-dessous."
   }
 }
 

@@ -1,11 +1,15 @@
 import * as React from 'react'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { CloseIcon, ChevronLeftIcon, ChevronRightIcon } from './icons'
 import message from './messages'
+
+import useInView from '../hooks/use-in-view'
 
 import { images } from '../data'
 
 const Gallery = ({ lang }) => {
+  const ref = useRef()
+
   const [currentImage, setCurrentImage] = useState()
   const [touchStartPosition, setTouchStartPosition] = useState()
 
@@ -54,9 +58,13 @@ const Gallery = ({ lang }) => {
     }
   }, [currentImage])
 
+  useInView(ref, undefined, true, 0.1, true)
+  useInView(ref, '.gallery__item', true, 0.5, true)
+
   return (
-    <div className="gallery">
+    <div ref={ref} className="gallery">
       <div className="gallery__title">{message(lang, 'menu-gallery')}</div>
+      <div className="gallery__subtitle" dangerouslySetInnerHTML={{ __html: message(lang, 'gallery-subtitle') }} />
       <div className="gallery__inner">
         {images.map((image, i) => {
           const { title, src } = image
