@@ -6,6 +6,7 @@ import Section from '../components/section'
 import Features from '../components/features'
 import Compatibility from '../components/compatibility'
 import Installation from '../components/installation'
+import Gallery from '../components/gallery'
 import message from '../components/messages'
 
 const Home = ({ lang }) => {
@@ -26,6 +27,9 @@ const Home = ({ lang }) => {
       </Section>
       <Section id="installation" dark>
         <Installation lang={lang} />
+      </Section>
+      <Section id="gallery">
+        <Gallery lang={lang} />
       </Section>
     </div>
   )

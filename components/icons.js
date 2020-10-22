@@ -141,6 +141,28 @@ export const ForkIcon = (props) => (
   </Icon>
 )
 
+export const CloseIcon = (props) => (
+  <Icon {...props}>
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M24 2.4L21.6 0 12 9.6 2.4 0 0 2.4 9.6 12 0 21.6 2.4 24l9.6-9.6 9.6 9.6 2.4-2.4-9.6-9.6L24 2.4z"
+    />
+  </Icon>
+)
+
+export const ChevronLeftIcon = (props) => (
+  <Icon {...props}>
+    <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+  </Icon>
+)
+
+export const ChevronRightIcon = (props) => (
+  <Icon {...props}>
+    <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+  </Icon>
+)
+
 export const PlayIcon = (props) => (
   <Icon {...props}>
     <path d="M3 22v-20l18 10-18 10z" />

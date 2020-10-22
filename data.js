@@ -174,9 +174,117 @@ export const introductionMenuItems = (lang) => [
   {
     code: 'installation',
     name: locales[lang]['menu-installation']
+  },
+  {
+    code: 'gallery',
+    name: locales[lang]['menu-gallery']
   }
-  // ,{
-  //   code: 'gallery',
-  //   name: locales[lang]['menu-gallery']
-  // }
+]
+
+export const images = [
+  {
+    title: {
+      en: 'Default layout, dark theme',
+      fr: 'Disposition par défaut, thème sombre'
+    },
+    src: '/images/gallery/1.jpg'
+  },
+  {
+    title: {
+      en: 'Default layout, light theme',
+      fr: 'Disposition par défaut, thème clair'
+    },
+    src: '/images/gallery/2.jpg'
+  },
+  {
+    title: {
+      en: 'Floating layout, dark theme',
+      fr: 'Barre flottante, thème sombre'
+    },
+    src: '/images/gallery/3.jpg'
+  },
+  {
+    title: {
+      en: 'Floating layout without background, dark theme',
+      fr: 'Barre flottante sans couleur de fond, thème sombre'
+    },
+    src: '/images/gallery/4.jpg'
+  },
+  {
+    title: {
+      en: 'Default layout, no colors in data widgets, dark theme',
+      fr: 'Disposition par défaut, sans couleurs, thème sombre'
+    },
+    src: '/images/gallery/5.jpg'
+  },
+  {
+    title: {
+      en: 'Bottom bar layout, dark theme',
+      fr: "Barre collée au bas de l'écran, thème sombre"
+    },
+    src: '/images/gallery/6.jpg'
+  },
+  {
+    title: {
+      en: 'Default layout, Caffeinate activated, dark theme',
+      fr: 'Disposition par défaut, mode Caffeinate activé, thème sombre'
+    },
+    src: '/images/gallery/7.jpg'
+  },
+  {
+    title: {
+      en: 'Default layout, current browser track displayed, dark theme',
+      fr: 'Disposition par défaut, musique courante du navigateur affichée, thème sombre'
+    },
+    src: '/images/gallery/8.jpg'
+  },
+  {
+    title: {
+      en: 'Default layout, current Spotify track displayed, dark theme',
+      fr: 'Disposition par défaut, musique courante de Spotify affichée, thème sombre'
+    },
+    src: '/images/gallery/9.jpg'
+  },
+  {
+    title: {
+      en: 'Settings, "global" tab',
+      fr: 'Paramètres, onglet "général"'
+    },
+    src: '/images/gallery/10.jpg'
+  },
+  {
+    title: {
+      en: 'Settings, "spaces" tab',
+      fr: 'Paramètres, onglet "espaces de travail"'
+    },
+    src: '/images/gallery/11.jpg'
+  },
+  {
+    title: {
+      en: 'Settings, "widgets" tab',
+      fr: 'Paramètres, onglet "widgets"'
+    },
+    src: '/images/gallery/12.jpg'
+  },
+  {
+    title: {
+      en: 'Settings, "battery" tab',
+      fr: 'Paramètres, onglet "batterie"'
+    },
+    src: '/images/gallery/13.jpg'
+  },
+  {
+    title: {
+      en: 'Settings, "time" tab',
+      fr: 'Paramètres, onglet "heure"'
+    },
+    src: '/images/gallery/14.jpg'
+  },
+  {
+    title: {
+      en: 'Settings, "date" tab',
+      fr: 'Paramètres, onglet "date"'
+    },
+    src: '/images/gallery/15.jpg'
+  }
 ]
