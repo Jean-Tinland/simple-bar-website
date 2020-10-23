@@ -2,6 +2,8 @@ import { GoogleChromeIcon, SkypeIcon, SlackIcon, CodeIcon } from './components/i
 
 export const locales = {
   en: {
+    'seo-description': 'simple-bar - An Übersicht status bar widget for yabai',
+
     'home-title': 'simple-bar - An Übersicht status bar widget for yabai',
 
     'introduction-title': 'simple-bar',
@@ -68,6 +70,8 @@ export const locales = {
       'Feel free to open an issue <a href="https://github.com/Jean-Tinland/simple-bar-website/issues">here</a>, I\'ll add your screenshots below.'
   },
   fr: {
+    'seo-description': 'simple-bar - Un widget Übersicht pour yabai',
+
     'home-title': 'simple-bar - Un widget Übersicht pour yabai',
 
     'introduction-title': 'simple-bar',

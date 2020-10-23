@@ -1,5 +1,6 @@
 import * as React from 'react'
 import Document, { Html, Head, Main, NextScript } from 'next/document'
+import message from '../components/messages'
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -11,7 +12,9 @@ class MyDocument extends Document {
     const { lang } = this.props.__NEXT_DATA__.props.pageProps
     return (
       <Html lang={lang}>
-        <Head />
+        <Head>
+          <meta name="description" content={message(lang, 'seo-description')} />
+        </Head>
         <body>
           <Main />
           <NextScript />
