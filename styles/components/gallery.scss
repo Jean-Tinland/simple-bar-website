@@ -47,20 +47,20 @@
     flex: 0 0 33.33%;
   }
 }
-.gallery__item::before {
+.gallery__item--in-view::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  top: 7px;
+  left: 7px;
+  width: calc(100% - 14px);
+  height: calc(100% - 14px);
   background: linear-gradient(to bottom right, $majenta, $red);
   opacity: 0;
-  border-radius: $radius / 2;
+  border-radius: $radius / 1.5;
   transition: opacity 160ms $transition-easing;
 }
-.gallery__item:hover::before {
-  opacity: 0.3;
+.gallery__item--in-view:hover::before {
+  opacity: 1;
 }
 .gallery__item-image {
   position: relative;
