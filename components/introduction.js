@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect, useRef, memo } from 'react'
 import SimpleBar from './simple-bar/'
 import message from './messages'
 import { EyeIcon, StarIcon, ForkIcon } from './icons'
@@ -95,4 +95,4 @@ const Introduction = ({ lang }) => {
   )
 }
 
-export default Introduction
+export default memo(Introduction)
