@@ -50,7 +50,7 @@ export const locales = {
     'compatibility-subtitle': "Before installing <span>simple-bar</span>, you'll need to meet some prerequisites.",
     'compatibility-description-title-1': 'OS version',
     'compatibility-description-1':
-      "<span>simple-bar</span> has been fully tested on <b>macos Catalina</b>. As I'm working on Catalina, I haven't tested this widget on older versions of macos and on macos 11 Big Sur either.",
+      '<span>simple-bar</span> has been tested and is fully working on both Catalina & Big Sur.',
     'compatibility-description-title-2': 'Screen size',
     'compatibility-description-2':
       'You\'ll need a screen with a size of <b>13"</b> at least with your screen resolution scaled on "More space" setting.<br/><span>simple-bar</span> will work on smaller screens but you\'ll need to make a choice between the widgets you want to display.',
@@ -118,7 +118,7 @@ export const locales = {
     'compatibility-subtitle': "Avant d'installer <span>simple-bar</span>, vous devrez remplir certains pré-requis.",
     'compatibility-description-title-1': 'Version de mac OS',
     'compatibility-description-1':
-      "<span>simple-bar</span> fonctionne sur <b>mac OS Catalina</b>. Je travaille exclusivement Catalina, de fait, ce widget n'a pas été testé sur les versions plus anciennes de mac OS ni sur Big Sur.",
+      '<span>simple-bar</span> a été testé et fonctionne pleinement sur <b>mac OS Catalina</b> et <b>mac OS Big Sur.',
     'compatibility-description-title-2': "Taille d'écran",
     'compatibility-description-2':
       "Vous aurez besoin d'un écran ayant une taille de <b>13 pouces minimum</b> avec une résolution mise à l'échelle sur le paramètre <b>\"plus d'espace\"</b>.<br/><span>simple-bar</span> peut fonctionner sur un écran plus petit mais vous devrez faire des choix sur le nombre de widgets à afficher.",
