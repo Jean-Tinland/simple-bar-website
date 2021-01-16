@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 import * as React from 'react'
 import { useState, useEffect, useRef, memo } from 'react'
 import SimpleBar from './simple-bar/'
@@ -43,7 +44,6 @@ const Introduction = ({ lang }) => {
         <a
           href="https://github.com/Jean-Tinland/simple-bar"
           target="_blank"
-          rel="noopener, noreferrer"
           className="introduction__data-item introduction__data-item--watchers"
         >
           <div className="introduction__data-item-left">
@@ -54,7 +54,6 @@ const Introduction = ({ lang }) => {
         <a
           href="https://github.com/Jean-Tinland/simple-bar"
           target="_blank"
-          rel="noopener, noreferrer"
           className="introduction__data-item introduction__data-item--stars"
         >
           <div className="introduction__data-item-left">
@@ -65,7 +64,6 @@ const Introduction = ({ lang }) => {
         <a
           href="https://github.com/Jean-Tinland/simple-bar"
           target="_blank"
-          rel="noopener, noreferrer"
           className="introduction__data-item introduction__data-item--forks"
         >
           <div className="introduction__data-item-left">
