@@ -4,7 +4,7 @@ import Terminal from './terminal'
 import message from './messages'
 
 import useInView from '../hooks/use-in-view'
-import Window from './window'
+import FakeWindow from './fake-window'
 
 const Installation = ({ lang }) => {
   const ref = useRef()
@@ -39,7 +39,7 @@ const Installation = ({ lang }) => {
           className="installation__description"
           dangerouslySetInnerHTML={{ __html: message(lang, 'installation-description-4') }}
         />
-        <Window string={message(lang, 'installation-description-5')} />
+        <FakeWindow string={message(lang, 'installation-description-5')} />
       </div>
     </div>
   )
