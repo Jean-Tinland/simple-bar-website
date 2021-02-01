@@ -5,10 +5,10 @@ import message from './messages'
 import useInView from '../hooks/use-in-view'
 
 const features = [
-  { id: 1, image: '/images/features/process.jpg' },
-  { id: 2, image: '/images/features/spaces.jpg' },
-  { id: 3, image: '/images/features/information.jpg' },
-  { id: 4, image: '/images/features/settings.jpg' }
+  { id: 1, image: '/images/features/process.png' },
+  { id: 2, image: '/images/features/spaces.png' },
+  { id: 3, image: '/images/features/information.png' },
+  { id: 4, image: '/images/features/settings.png' }
 ]
 
 const Features = ({ lang }) => {
