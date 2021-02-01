@@ -1,0 +1,56 @@
+.window {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: 25px auto;
+  padding: 65px 25px 25px 25px;
+  background-color: $primary-light;
+  border-radius: $radius;
+}
+.window__dots {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  display: flex;
+}
+.window__dot {
+  width: 11px;
+  height: 11px;
+  margin-right: 8px;
+  border-radius: 50%;
+}
+.window__dot:nth-of-type(1) {
+  background-color: #ff605c;
+}
+.window__dot:nth-of-type(2) {
+  background-color: #ffbd44;
+}
+.window__dot:nth-of-type(3) {
+  background-color: #00ca4e;
+}
+.window__icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+  cursor: pointer;
+  user-select: none;
+}
+.window__icon--clicked {
+  fill: $green;
+  animation: window-icon-clicked 160ms $transition-easing;
+}
+@keyframes window-icon-clicked {
+  50% {
+    transform: scale(1.3);
+  }
+}
+.window__text {
+  @include text(#fff, 11px, 13px, 1.75);
+  font-family: $mono-font;
+}
