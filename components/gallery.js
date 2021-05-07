@@ -93,7 +93,10 @@ const Gallery = ({ lang }) => {
               src={images[currentImage].src}
               alt={images[currentImage].title[lang]}
             />
-            <div className="gallery__zoom-inner-title">{images[currentImage].title[lang]}</div>
+            <div
+              className="gallery__zoom-inner-title"
+              dangerouslySetInnerHTML={{ __html: images[currentImage].title[lang] }}
+            />
           </div>
           <div className="gallery__zoom-controls">
             <ChevronLeftIcon className="gallery__zoom-control gallery__zoom-control--prev" onClick={prev} />

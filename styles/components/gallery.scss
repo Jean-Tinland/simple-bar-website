@@ -132,6 +132,9 @@
   background-color: rgba($primary, 0.7);
   border-radius: $radius;
 }
+.gallery__zoom-inner-title > a {
+  color: $yellow;
+}
 .gallery__zoom-controls {
   position: absolute;
   top: calc(50% - 12px);

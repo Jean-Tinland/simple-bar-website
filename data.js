@@ -239,5 +239,14 @@ export const images = [
       fr: "Barre collée au bas de l'écran, thème sombre"
     },
     src: '/images/gallery/6.png'
+  },
+  {
+    title: {
+      en:
+        'Gruvbox example in <a href="https://github.com/mTvare6" target="_blank" rel="noopener noreferrer">@mTvare6</a> workflow',
+      fr:
+        'Exemple avec les couleurs du theme Gruvbox, <a href="https://github.com/mTvare6" target="_blank" rel="noopener noreferrer">@mTvare6</a>'
+    },
+    src: '/images/gallery/user-contributions/screenshot_mTvare6.jpg'
   }
 ]
