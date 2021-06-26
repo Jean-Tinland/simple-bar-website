@@ -1,3 +1,5 @@
+const webpack = require('webpack')
+
 module.exports = {
   trailingSlash: true,
   exportPathMap() {
@@ -14,5 +16,11 @@ module.exports = {
         permanent: true
       }
     ]
+  },
+  webpack: (config) => {
+    config.plugins.push(
+      new webpack.DefinePlugin({ 'process.env.REACT_APP_ENV': JSON.stringify(process.env.REACT_APP_ENV) })
+    )
+    return config
   }
 }
