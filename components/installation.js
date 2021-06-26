@@ -35,11 +35,6 @@ const Installation = ({ lang }) => {
           className="installation__description"
           dangerouslySetInnerHTML={{ __html: message(lang, 'installation-description-3') }}
         />
-        <div
-          className="installation__description"
-          dangerouslySetInnerHTML={{ __html: message(lang, 'installation-description-4') }}
-        />
-        <FakeWindow string={message(lang, 'installation-description-5')} />
       </div>
     </div>
   )
